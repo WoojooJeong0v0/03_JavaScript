@@ -1,0 +1,13 @@
+.table{
+  width: 800px;
+  min-height: 150px;  /*최소 높이 150px*/
+  border: 3px solid black;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
