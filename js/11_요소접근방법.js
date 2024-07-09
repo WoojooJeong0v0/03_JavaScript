@@ -138,3 +138,53 @@ function cssTest1(){
   test1.style.fontSize = "30px";
   
 }
+
+
+/** 카카오톡 채팅 만들기 */
+function readValue(){
+  // 채팅 출력되는 화면
+  const bg = document.querySelector('#chattingBackground');
+  
+  // 채팅이 입력되는 input
+  const input = document.querySelector('#userInput');
+
+  /* 입력된 값이 없을 경우
+    1) 진짜로 작성 안 함
+    2) 작성된 내용이 모두 공백 문자다 (띄어쓰기, 탭, 엔터 등) white space
+    
+    문자열.trim() : trim 을 사용, 문자열 좌우 공백을 제거한다 (중간공백은 제거 안 함) */
+
+  if(input.value.trim().length === 0){
+    alert("채팅 내용을 입력해 주세요.");
+
+    input.value = ''; // 입력된 공백을 제거, 전부 없앤 것 같은 효과
+    input.focus(); // input에 다시 포커스 맞춤 (커서 활성화)
+
+    return; // 얼리리턴, 함수를 즉시 종료하고 호출한 곳으로 돌아감
+  }
+
+  /* 입력된 값을 읽어와 채팅 화면에 누적 */
+  bg.innerHTML += `<p><span>${input.value}</span></p>`; // 누적시키기 위해
+
+  input.value = ''; // 이전 입력 내용 제거
+  input.focus(); // input에 다시 포커스 맞춤
+
+  //bg.scrollHeight : 스크롤되어 가려진 부분까지 포함한 전체 높이
+  //bg.scrollTop : 스크롤 위쪽 부분의 현재 위치
+  //bg.scrollTop = 값 : 스크롤 위쪽 부분을 "값" 부분으로 이동
+  //               값이 스크롤 높이를 초과하면 제일 아래로 이동한다
+
+  //채팅화면 제일 아래로 스크롤을 이동 시킨다
+  bg.scrollTop = bg.scrollHeight;
+
+}
+
+/** #userInput 에서 키보드로 값 입력 중 "Enter" 입력이 감지되는 경우 readValue 함수 호출 */
+document.querySelector('#userInput').addEventListener("keydown", function(e){
+  // 콘솔에서 입력된 키 확인
+  // console.log(e.key);
+
+  if(e.key === "Enter"){
+    readValue(); // 함수호출
+  }
+});

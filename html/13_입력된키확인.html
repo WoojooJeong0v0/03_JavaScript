@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>13_입력된키확인</title>
+  <link rel="stylesheet" href="../css/13_입력된키확인.css">
+</head>
+<body>
+  
+  <!-- 입력된 키 (qwer) 확인 -->
+  <div class="container"></div>
+
+  <hr>
+
+  <pre>
+    - keydown 이벤트
+      -> key가 내려갈 때, 내려가 있을 때 포함
+
+    - keyup 이벤트
+      -> key가 올라왔을 때, 1회 발생
+
+    - 요소.addEventListener("keydown", function(e){
+
+      // 매개변수 e : 이벤트 객체
+      // 현재 수행된 이벤트와 관련된 모든 정보를 가지고 있음
+
+      // e.key : 어떤 key가 down/up 되었는지 반환해줌
+    })
+
+    - document.addEventListener("keydown", function(e){})
+  </pre>
+
+  <img src="../images/13_입력된키확인/4.webp" id="cursorImage">
+
+  <div class="container-qwer">
+    <div class=key><strong>Q</strong></div>
+    <div class=key><strong>W</strong></div>
+    <div class=key><strong>E</strong></div>
+    <div class=key><strong>R</strong></div>
+  </div>
+
+
+  <script src="../js/13_입력된키확인.js"></script>
+</body>
+</html>
