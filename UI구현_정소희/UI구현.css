@@ -1,0 +1,60 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main{
+  width: 600px;
+  margin: 50px auto;
+}
+
+table{
+  width: 600px;
+  height: 50px;
+  padding: 10px;
+}
+
+.resultBox{
+  width: 200px;
+  height: 300px;
+  margin: 50px auto;
+  border: 3px solid black;
+  display: flex;
+  justify-content: flex-start;
+}
+
+main > div *{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box{
+  width: 600px;
+  margin : auto;
+  display: flex;
+  justify-content: center;
+}
+
+.grow2{
+  display: flex;
+}
+
+#font-size{
+ width: 90px; 
+}
+
+.inputBox-w, .inputBox-h{
+  width: 100px;
+}
+
+.grow1 > input *{
+  flex-grow: 1;
+}
+
+.hg{
+  display: flex;
+}
+
+#hello{
+ width: 443px;
+}
