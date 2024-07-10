@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습_가위바위보</title>
+  <link rel="stylesheet" href="../css/연습_가위바위보.css">
+</head>
+<body>
+
+  <main>
+    <section>
+      <div class="vs-image">
+        
+        <table>
+          <thead>
+          <tr>
+            <td>USER</td>
+            <td></td>
+            <td>COM</td>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>
+              <img src="../images/가위L.png" width="200px" height="200px" id="user-image">
+            </td>
+            <td>VS</td>
+            <td>
+              <img src="../images/가위R.png" width="200px" height="200px" id="com-image">
+            </td>
+          </tr>
+         </tbody>
+         <tfoot>
+          <tr>
+            <td>
+              <div class="user-btn">
+                <div class="u-b-c">가위</div>
+                <div class="u-b-r">바위</div>
+                <div class="u-b-b">보</div>
+              </div>
+            </td>
+            <td></td>
+            <td>
+              <div>
+                <div class="start">GAME START</div>
+              </div>
+            </td>
+          </tr>
+          </tfoot>
+        </table>
+
+      </div>
+      <div class="vs-result-table">
+        <div> USER VS COM </div>
+        <div>
+          <table class="vs-result">
+            <tr>
+              <td>승</td>
+              <td>무</td>
+              <td>패</td>
+            </tr>
+            <tr>
+              <td><span id="win">1</span></td>
+              <td><span id="tie">2</span></td>
+              <td><span id="lose">3</span></td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <table>
+            <tr>
+              <td><span class="result">WIN</span></td>
+              <td><span class="u-select">가위</span> VS <span class="c-select">보</span></td>
+            </tr>
+            <tr>
+              <td><span class="result">WIN</span></td>
+              <td><span class="u-select">가위</span> VS <span class="c-select">보</span></td>
+            </tr>
+            <tr>
+              <td><span class="result">WIN</span></td>
+              <td><span class="u-select">가위</span> VS <span class="c-select">보</span></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../js/연습_가위바위보.js"></script>
+</body>
+</html>

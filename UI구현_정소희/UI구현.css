@@ -56,5 +56,5 @@ main > div *{
 }
 
 #hello{
- width: 443px;
+ flex-grow: 1;
 }

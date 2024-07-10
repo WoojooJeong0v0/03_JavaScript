@@ -1,0 +1,65 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* body에서 min-height를 입력하지 않아서 의도대로 안됨!!
+해당 부분 다시 확인해야 함 */
+body{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main{
+  width: 990px;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+}
+
+section > div:first-child{
+  width: 60%;
+
+  border-right: 3px solid black;
+}
+
+section > div:last-child{
+  width: 40%;
+}
+
+table{
+  width: 100%;
+}
+
+thead{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.user-btn{
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.vs-result > div:first-child{
+  height: 30px;
+}
+
+.vs-result{
+  height: 30px;
+  border: 1px solid black;
+}
+
+.u-b{
+  border: 1px solid black;
+}
