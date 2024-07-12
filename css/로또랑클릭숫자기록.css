@@ -3,3 +3,14 @@
   padding: 0;
   margin: 0;
 }
+
+main{
+  margin: 10px;
+  display: flex;
+}
+
+.lotto{
+  border: 1px solid black;
+  width: 300px;
+  height: 600px;
+}
