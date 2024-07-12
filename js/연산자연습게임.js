@@ -34,7 +34,7 @@ function adventure(){
   let Number2 = "무기 강화 아이템을 획득했습니다. 힘이 2 증가합니다."
   let Number3 = "민첩의 물약을 획득했습니다. 민첩이 1 증가합니다." */
 
-  let randomNumber = Math.floor(Math.random() * 10);
+  let randomNumber = Math.floor(Math.random() * 4);
 
   if(randomNumber === 1){
     let hpUp = hpStat += 3;

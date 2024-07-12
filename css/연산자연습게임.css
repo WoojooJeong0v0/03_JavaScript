@@ -1,6 +1,23 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  display: flex;
+  justify-content: row;
+  align-items: center;
+  min-height: 100%;  /*최소 높이 150px*/
+
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
 .table{
   width: 800px;
-  min-height: 150px;  /*최소 높이 150px*/
+ 
   border: 3px solid black;
   margin: auto;
   padding: 25px;
@@ -10,4 +27,17 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.p{
+  width: 100px;
+  height: 150px;
+  background-image: url('https://cdn.pixabay.com/photo/2017/06/15/02/26/rabbit-2403904_1280.png');
+  background-size: cover;
+
+  display: flex;
+}
+
+.log{
+  border: 3px solid black;
 }
